@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>email sending system</title>
+    <link rel="stylesheet" href="email_system.css">
+</head>
+<body>
+    <div class = "details">
+        <h2>Get in touch</h2>
+        <form onsubmit="emailSend(); reset(); return false">
+            <input type = "text" id = "name" placeholder="Enter your name" name = "name" required>
+            <input type = "text" id = "email" placeholder="Enter email" name = "email" required> 
+            <button type="submit" class = "btn">Submit</button>
+        </form>
+    </div>
+    <script src="email_sender.js"></script>
+</body>
+</html>
