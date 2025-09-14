@@ -2,9 +2,11 @@ body {
     align-content: center;
     justify-content: center;
     margin: auto;
-    background-color: teal;
     padding-top: 40px;
-    background-image: url("https://www.vecteezy.com/vector-art/7424393-message-icon-made-with-binary-code-email-mail-communication-online-chat-global-networking-digital-binary-data-and-streaming-digital-code-matrix-background-with-digits-1-0-vector-illustration");
+    background-image: url("./images/email-messages-network-circuit-board-link-connection-technology.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
 }
 .details h2 {
     flex-wrap: nowrap;
@@ -15,12 +17,12 @@ body {
     width: 72%;
     border-radius: 8px;
     text-align: center;
-    color: #0d0d40;
+    color: #111134;
     }
 .details {
     align-content: center;
     text-align: center;
-    background-color: #95e5ac;
+    background-color: #8989bf;
     margin: auto;
     display: block;
     height: auto;
