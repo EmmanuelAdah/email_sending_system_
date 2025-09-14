@@ -1,21 +1,64 @@
-#body {
-    align-content: center;
-    margin: auto;
-}
-.details {
+body {
     align-content: center;
     justify-content: center;
-    display: inline-block;
-    max-width: 50%;
-    height: auto;
-    line-height: 30px;
     margin: auto;
+    background-color: teal;
+    padding-top: 40px;
+    background-image: url("https://www.vecteezy.com/vector-art/7424393-message-icon-made-with-binary-code-email-mail-communication-online-chat-global-networking-digital-binary-data-and-streaming-digital-code-matrix-background-with-digits-1-0-vector-illustration");
+}
+.details h2 {
+    flex-wrap: nowrap;
+    font-size: 55px;
+    margin: auto;
+    padding: 30px 0 10px 0;
+    border-bottom: 4px solid black;
+    width: 72%;
+    border-radius: 8px;
+    text-align: center;
+    color: #0d0d40;
+    }
+.details {
+    align-content: center;
+    text-align: center;
+    background-color: #95e5ac;
+    margin: auto;
+    display: block;
+    height: auto;
+    line-height: 42px;
     border: 1px solid black;
-    border-radius: 5%;
+    border-radius: 2%;
+    max-width: 30%;
 }
 input {
-    width: 80%;
-    height: 10%;
+    width: 95%;
+    height: 25px;
     border-width: 0 0 1px 0;
-    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+#message {
+    width: 95%;
+    height: auto;
+    min-height: 100px;
+    border-radius: 5px;
+}
+form {
+    display: block;
+    margin: auto;
+    width: 95%;
+    align-content: center;
+    padding: 10px;
+}
+button {
+    cursor: pointer;
+    width: 30%;
+    height: 35px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+button:hover {
+    cursor: pointer;
+    background-color:  cadetblue;
 }
