@@ -1,0 +1,18 @@
+{
+  "name": "email_sending_system_back_end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "email_sender.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EmmanuelAdah/email_sending_system_.git"
+  },
+  "private": true,
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "emailjs": "^4.0.3"
+  }
+}
