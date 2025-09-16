@@ -7,16 +7,28 @@
 <body>
     <div class = "details">
         <h2>Get in touch</h2>
-        <form onsubmit="sendEmail(); reset(); return false">
+        <form onsubmit=" sendEmail(); reset(); return false">
             <input type = "text" id = "name" placeholder="Enter your name" name = "name" required>
-            <input type = "text" id = "email" placeholder="Enter email" name = "email" required>
+            <input type = "text" id = "email" placeholder="Enter recipient email" name = "email" required>
             <input type = "text" id = "subject" placeholder="Subject" name = "subject" required>
             <textarea id = "message" placeholder="Enter your message" name = "message" required></textarea>
-            <button type="submit" class = "btn">Submit</button>
+            <button type="submit" onclick="sendEmail()" >Submit</button>
         </form>
     </div>
-    <script src="email_sender.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
+    <script src="email_sender.js">
+
     </script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "zupYqYwnG8Eqww4PQ",
+            });
+        })();
+    </script>
+<!--    <script src="https://smtpjs.com/v3/smtp.js"></script>-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
