@@ -1,35 +1,24 @@
 const bcrypt = require('bcrypt')
-import { SMTPClient } from 'emailjs';
+const express = require('express')
+const mongoose = require('mongoose')
 
-function sendEmail (){
-
-    const client = new SMTPClient({
-        user: 'user',
-        password: 'password',
-        host: 'smtp.your-email.com',
-        ssl: true,
-    });
-
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const subject = document.getElementById("subject").value;
-    const message = document.getElementById("message").value;
+const app = express()
+// import swal from 'sweetalert';
 
 
-    client.send(
-        {
-            from: 'edogbanya02@gmail.com',
-            to: email,
-            cc: 'else <else@your-email.com>',
-            company: name,
-            subject: subject,
-            text: message,
-        },
-        (err, message) => {
-            console.log(err || message);
-        }
-    );
+function sendEmail(){
+    let details = {
+        name : document.getElementById("name").value,
+        subject : document.getElementById("subject").value,
+        email : document.getElementById("email").value,
+        message : document.getElementById("message").value
+    }
+
+    emailjs.send("service_06sa2jc","template_31e18jd", details)
+        .then(alert("Email sent successfully..."))
+
  }
+
 
   function encryptPassword (){
     const password = document.getElementById("password").value;
@@ -37,3 +26,4 @@ function sendEmail (){
     const hash = bcrypt.hashSync(password, salt);
     console.log(hash);
   }
+
