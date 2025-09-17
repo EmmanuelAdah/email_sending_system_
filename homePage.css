@@ -82,6 +82,8 @@ input {
     width:85%;
     height: 30px;
     border-radius: 8px;
+    padding-left: 8px;
+    font-size: 1rem;
 }
 .register a {
     cursor: pointer;
@@ -95,7 +97,7 @@ label {
 button {
     cursor: pointer;
     width: 60%;
-    height: 30px;
+    height: 35px;
     border-radius: 50px;
     margin: auto;
     font-size: 1.3rem;
@@ -117,7 +119,6 @@ button:hover {
     border-radius: 15px;
     overflow: hidden;
     position: absolute;
-    visibility: hidden;
 }
 .pop-up a {
     width: 10%;
@@ -138,7 +139,6 @@ button:hover {
     width: 31px;
     transition: 0.2s   ;
 }
-.open-popup {
-    visibility: visible;
-    transition: 0.1s;
+.hidden {
+    display: none;
 }
