@@ -19,6 +19,20 @@ function sendEmail(){
         .then(alert(`Email sent to ${name} successfully...`))
  }
 
+document.addEventListener('DOMContentLoaded', function () {
+    const popup = document.getElementsByClassName('.pop-up');
+    const closeBtn = document.querySelector('.close-btn');
+    const openBtn = document.getElementById('open-popup');
+
+    openBtn.addEventListener('click', () => {
+        popup.classList.remove('hidden');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        popup.classList.add('hidden');
+    });
+});
+
   function encryptPassword (){
     const password = document.getElementById("password").value;
     const salt = bcrypt.genSaltSync(10);
