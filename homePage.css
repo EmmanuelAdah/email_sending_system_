@@ -1,0 +1,144 @@
+body {
+    background-image: url("/images/top-view-paper-dove-with-envelope-copy-space.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    align-content: center;
+    background-color: #dfc0c0;
+    padding-top: 6px;
+}
+.navbar {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #e3e3f1;
+    height: 2.4rem;
+    padding-right: 10%;
+}
+.navbar img {
+    width: 10%;
+    height: 100%;
+}
+.options {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: auto;
+}
+.options a {
+    color: #01010c;
+    text-decoration: none;
+    border-bottom: 4px solid #9494bb;
+    font-size: 1.2rem;
+    height: 100%;
+    align-content: center;
+}
+.options a:hover {
+    border-bottom: 4px solid #0f0f3d;
+    color: #01010c;
+}
+.message {
+    align-content: center;
+    display: flex;
+    padding: 8% 8% 8% 10%;
+    color: black;
+    margin: auto;
+    font-size: 1.2rem;
+    justify-content: space-between;
+}
+form {
+    line-height: 60px;
+}
+h1 {
+    color: #160869;
+    font-family: "Times New Roman", Times, serif;
+}
+h2 {
+    color: #13135d;
+    padding-top: 1rem;
+}
+.user-login {
+    text-align: center;
+    background-color: #0f0f64;
+    margin: auto;
+    display: block;
+    height: auto;
+    line-height: 22px;
+    border: 1px solid black;
+    border-radius: 15px;
+    max-width: 30%;
+    background-image: linear-gradient(to top, #212162, #2389a4);
+    padding-bottom: 20px;
+}
+.user-login p {
+    color: #f4ecec;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+input {
+    width:85%;
+    height: 30px;
+    border-radius: 8px;
+}
+.register a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+label {
+    color: #acace6;
+}
+button {
+    cursor: pointer;
+    width: 60%;
+    height: 30px;
+    border-radius: 50px;
+    margin: auto;
+    font-size: 1.3rem;
+    background-color: #2eca41;
+    color: white;
+}
+button:hover {
+    color: black;
+    background-color: #4fd45a;
+}
+.pop-up {
+    width: 25%;
+    max-width: 30%;
+    margin: 0;
+    right: 9.4%;
+    top: 56%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(to top, #212162, #2389a4);
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+}
+.pop-up a {
+    width: 10%;
+}
+.pop-up h3 {
+    color: #f4f0f0;
+}
+.pop-up a img {
+    width: 30px;
+    float: right;
+    padding: 5px;
+    background-color: #da5959;
+    border-radius: 5px;
+}
+.pop-up a img:hover {
+    cursor: pointer;
+    background-color: #ede0e0;
+    width: 31px;
+    transition: 0.2s   ;
+}
+.open-popup {
+    visibility: visible;
+    transition: 0.1s;
+}
