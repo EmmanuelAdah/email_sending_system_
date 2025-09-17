@@ -3,6 +3,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 
 const app = express()
+mongoose.connect('mongodb://localhost:27017/')
 // import swal from 'sweetalert';
 
 
@@ -15,10 +16,8 @@ function sendEmail(){
     }
 
     emailjs.send("service_06sa2jc","template_31e18jd", details)
-        .then(alert("Email sent successfully..."))
-
+        .then(alert(`Email sent to ${name} successfully...`))
  }
-
 
   function encryptPassword (){
     const password = document.getElementById("password").value;
@@ -26,4 +25,6 @@ function sendEmail(){
     const hash = bcrypt.hashSync(password, salt);
     console.log(hash);
   }
+
+  function login (){}
 
