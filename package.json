@@ -1,14 +1,13 @@
 {
   "name": "email_sending_system_back_end",
   "version": "1.0.0",
-  "description": "",
   "main": "email_sender.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/EmmanuelAdah/email_sending_system_.git"
+    "url": "git+https://github.com/EmmanuelAdah/email_sending_system_.git"
   },
   "private": true,
   "dependencies": {
@@ -17,5 +16,14 @@
     "express": "^5.1.0",
     "mongoose": "^8.18.1",
     "sweetalert": "^2.1.2"
-  }
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmmanuelAdah/email_sending_system_/issues"
+  },
+  "homepage": "https://github.com/EmmanuelAdah/email_sending_system_#readme",
+  "description": ""
 }
